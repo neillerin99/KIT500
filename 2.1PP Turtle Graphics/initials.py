@@ -2,40 +2,53 @@
 KIT101 2.1PP Turtle Graphics
 
 Turtle Graphics task to draw the author's initials.
-Some of the code below has been _over_ commented to help
-you understand what is happening.
 """
 
 __author__ = "NEIL EDRIANE LERIN"
 
-import turtle as painter
+import turtle as t
 
 
 def main():
     # Change turtle speed if desired
     # (1=slowest .. 10=fastest | 0=no animation)
-    painter.speed(1)
+    t.speed(3)
 
-    # Draw your initials below, remembering to use painter.penup() to
-    # move without drawing a line...
-  
-    # Rotate pointer by full 180 and move forward
-    # to center the initials
-    painter.penup()
-    painter.left(180)
-    painter.forward(100)
-    painter.pendown()
+    # set initial color to red
+    t.color('red')
+
+    # Rotate pointer by full 180 and move forward to center the initials
+    t.penup()
+    t.left(180)
+    t.forward(100)
+    t.pendown()
     
-    painter.right(90) # recenter the pointer to point up
-    painter.forward(150) # move the pointer 150 forward
-    painter.right(150) # reposition the pointer header to right 150 degrees
-    painter.forward(170) # move the pointer 170 forward
-    painter.left(150) # reposition the pointer header to left to revert back to up pointing position
-    painter.forward(150) # move the pointer 150 forward
+    # code block to draw the initial N
+    t.right(90) # recenter the pointer to point up
+    t.forward(150) # move the pointer 150 forward
+    t.right(150) # reposition the pointer header to right 150 degrees
+    t.forward(170) # move the pointer 170 forward
+    t.left(150) # reposition the pointer header to left to revert back to up pointing position
+    t.forward(150) # move the pointer 150 forward
 
+    # code block to create a space between letters and reposition the header
+    t.penup()
+    t.right(90)
+    t.forward(20)
+    t.right(90)
+    t.color('blue') # set pointer color to blue
+    t.pendown()
+
+    # code block to draw the Initial L
+    t.forward(150)
+    t.left(90)
+    t.forward(90)
+
+    # hide the turtle head
+    t.hideturtle()
 
     # Avoid closing the window automatically
-    painter.mainloop()
+    t.mainloop()
 
 
 if __name__ == "__main__":

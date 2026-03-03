@@ -21,6 +21,7 @@ def main():
     t.forward(310)
     t.right(135)
     t.pendown()
+    t.color('red')
     t.forward(100)
     t.right(90)
 
@@ -44,6 +45,7 @@ def main():
     t.forward(350)
     t.left(90)
     t.pendown()
+    t.color('blue')
     t.forward(100)
     t.right(120)
     t.forward(100)
@@ -53,6 +55,7 @@ def main():
     t.penup()
     
 #     Creating Rectangle Shape
+    t.color('green')
     t.forward(300)
     t.pendown()
     t.forward(100)
@@ -66,6 +69,7 @@ def main():
     
 #     Creating X
     t.forward(240)
+    t.color('orange')
     t.pendown()
     t.right(45)
     t.forward(150)
@@ -75,7 +79,7 @@ def main():
     t.pendown()
     t.right(135)
     t.forward(150)
-
+    t.hideturtle()
     # Avoid closing the window automatically
     t.mainloop()
 
