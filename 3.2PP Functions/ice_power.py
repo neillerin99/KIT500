@@ -17,12 +17,15 @@ def main():
     torque: int  # variable to store torque value input
     rpm: int  # variable to store rpm value for input
 
+    # printing of power based from static arguments
     print(f"Prosche 911 (999.2): {power_output(449,6500):.2f} kW")
     print(f"Toyota GR Corolla: {power_output(370,5550):.2f}")
 
+    # assigning user prompts
     torque = int(input("Input torque (Nm): "))
     rpm = int(input("Input motor's rpm: "))
 
+    # printing of power based from dynamic arguments
     print("Calculating...")
     print(f"Ouput: {power_output(torque, rpm):.2f} kW")
 
