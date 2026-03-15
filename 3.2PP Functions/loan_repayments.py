@@ -6,8 +6,6 @@ This prgoram shows how functions can be implemented.
 
 __author__ = "NEIL EDRIANE LERIN"
 
-# Add any imports here
-
 
 # Define your new function here
 def calc_monthly_payment(principal: int, months: int, annual_rate: float) -> float:

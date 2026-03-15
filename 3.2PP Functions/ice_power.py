@@ -1,5 +1,6 @@
 """
-3.3PP Functions: Describe the option you chose here
+3.3PP Functions: Engine Power
+This program compuetes the Engine power of a vehicle and also shows how functions work
 """
 
 __author__ = "NEIL EDRIANE LERIN"
