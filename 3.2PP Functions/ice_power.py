@@ -5,13 +5,15 @@ This program compuetes the Engine power of a vehicle and also shows how function
 
 __author__ = "NEIL EDRIANE LERIN"
 
-# Add any imports here
 import math as m
 
 
 def power_output(torque: float, rpm: int) -> float:
-    """This function computes power using the formula below"""
-    return torque * rpm * (2 * m.pi / 60000)
+    """This function computes the power output of a internal combustion engine"""
+    power: float # calculated power value 
+    
+    power = torque * rpm * (2 * m.pi / 60000)
+    return power
 
 
 def main():

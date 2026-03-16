@@ -12,7 +12,10 @@ def calculate_distance(velocity:float, time: float) -> float:
     """
     FRICTION: float = 0.7 # Friction value constant
     GRAVITY: float = 9.81 # Gravity value constant
-    return velocity * time + velocity ** 2 / (2 * FRICTION * GRAVITY)
+    distance: float # variable to store distance value
+    
+    distance = velocity * time + velocity ** 2 / (2 * FRICTION * GRAVITY)
+    return distance
 
 
 def main():

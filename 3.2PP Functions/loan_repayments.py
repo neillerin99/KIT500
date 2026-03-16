@@ -7,12 +7,13 @@ This prgoram shows how functions can be implemented.
 __author__ = "NEIL EDRIANE LERIN"
 
 
-# Define your new function here
 def calc_monthly_payment(principal: int, months: int, annual_rate: float) -> float:
-    """Function to compute the anual rate based from the formula"""
+    """Function to compute the loan repayment rate"""
+    repayment: float # calculated repayment value
     
     annual_rate = annual_rate / 1200 # calculate the new annual rate by diving the parameter by 1200
-    return (annual_rate * principal) / (1 - (1 + annual_rate) ** -months)
+    repayment = (annual_rate * principal) / (1 - (1 + annual_rate) ** -months)
+    return repayment
 
 
 def main():

@@ -4,7 +4,6 @@
 This program displays the medal tally with their corresponding countries based from user inputs
 """
 
-
 __author__ = "NEIL EDRIANE LERIN"
 
 
