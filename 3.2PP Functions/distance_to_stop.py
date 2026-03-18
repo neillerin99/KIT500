@@ -8,7 +8,8 @@ __author__ = "NEIL EDRIANE LERIN"
 
 def calculate_distance(velocity:float, time: float) -> float:
     """
-    This function computes the distance it takes to stop a vehicle
+    This function computes the distance it takes to stop a vehicle.
+    Takes takes velocity and time as parmeters, and computes and returns a float for the distance values
     """
     FRICTION: float = 0.7 # Friction value constant
     GRAVITY: float = 9.81 # Gravity value constant

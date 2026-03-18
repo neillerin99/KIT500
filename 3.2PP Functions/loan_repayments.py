@@ -8,7 +8,10 @@ __author__ = "NEIL EDRIANE LERIN"
 
 
 def calc_monthly_payment(principal: int, months: int, annual_rate: float) -> float:
-    """Function to compute the loan repayment rate"""
+    """
+    Function to compute the loan repayment rate;
+    Takes principal, months and annual_rate as parameters and returns a the computed value as float.
+    """
     repayment: float # calculated repayment value
     
     annual_rate = annual_rate / 1200 # calculate the new annual rate by diving the parameter by 1200
